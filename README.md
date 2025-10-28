@@ -1,0 +1,2 @@
+# WareCloud
+Inventory Management System
