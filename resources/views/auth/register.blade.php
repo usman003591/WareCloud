@@ -45,22 +45,34 @@
                                             <label for="name" class="form-label">Name</label>
                                             <input class="form-control" type="text" id="name" name="name" required=""
                                                 placeholder="Enter your full name">
+                                            @error('email')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
                                         <div class="form-group mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input class="form-control" type="email" id="email" name="email" required=""
                                                 placeholder="Enter your email">
+                                            @error('email')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group mb-3">
                                             <label for="password" class="form-label">Password</label>
                                             <input class="form-control" type="password" required="" name="password"
                                                 id="password" placeholder="Enter your password">
+                                            @error('email')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
                                         <div class="form-group mb-3">
                                             <label for="password_confirmation" class="form-label">Confirm password</label>
                                             <input class="form-control" type="password" required="" name="password_confirmation"
                                                 id="password_confirmation" placeholder="ReEnter your password">
+                                            @error('email')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group mb-0 row ">

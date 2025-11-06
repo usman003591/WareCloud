@@ -44,13 +44,19 @@
                                         <div class="form-group mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input class="form-control" type="email" id="email" name="email" required=""
-                                                placeholder="Enter your email">
+                                                placeholder="Enter your email" value="{{ old('email') }}">
+                                            @error('email')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group mb-3">
                                             <label for="password" class="form-label">Password</label>
                                             <input class="form-control" type="password" required="" name="password"
                                                 id="password" placeholder="Enter your password">
+                                            @error('password')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group d-flex mb-3">
